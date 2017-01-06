@@ -10,23 +10,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pertisk.Api", "src\Pertisk.Api\Pertisk.Api.xproj", "{211B29BE-B3AF-4F61-B217-19489CDECCCA}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "<%= name %>.Api", "src\<%= name %>.Api\<%= name %>.Api.xproj", "{211B29BE-B3AF-4F61-B217-19489CDECCCA}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pertisk.Web", "src\Pertisk.Web\Pertisk.Web.xproj", "{BC43AD54-C989-4450-8086-0669E1E24A29}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "<%= name %>.Web", "src\<%= name %>.Web\<%= name %>.Web.xproj", "{BC43AD54-C989-4450-8086-0669E1E24A29}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pertisk.DataAccess", "src\Pertisk.DataAccess\Pertisk.DataAccess.xproj", "{61301C05-551B-4352-A455-D54578CF7C60}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "<%= name %>.DataAccess", "src\<%= name %>.DataAccess\<%= name %>.DataAccess.xproj", "{61301C05-551B-4352-A455-D54578CF7C60}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pertisk.MapAttibutes", "src\Pertisk.MapAttibutes\Pertisk.MapAttibutes.xproj", "{ECBAB2C0-32FE-45E3-A7F1-989C0DA78455}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "<%= name %>.MapAttibutes", "src\<%= name %>.MapAttibutes\<%= name %>.MapAttibutes.xproj", "{ECBAB2C0-32FE-45E3-A7F1-989C0DA78455}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{523A71F9-188A-48A0-BFB8-49DC1A348BE5}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pertisk.DataAccess.UnitTests", "test\Pertisk.DataAccess.UnitTests\Pertisk.DataAccess.UnitTests.xproj", "{5596F183-BEC4-4E5A-9C3A-F3A0147D6B97}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "<%= name %>.DataAccess.UnitTests", "test\<%= name %>.DataAccess.UnitTests\<%= name %>.DataAccess.UnitTests.xproj", "{5596F183-BEC4-4E5A-9C3A-F3A0147D6B97}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pertisk.Intercepters", "src\Pertisk.Intercepters\Pertisk.Intercepters.xproj", "{70365843-E39D-40F1-9E19-AA6667680CD3}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "<%= name %>.Intercepters", "src\<%= name %>.Intercepters\<%= name %>.Intercepters.xproj", "{70365843-E39D-40F1-9E19-AA6667680CD3}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pertisk.Datas", "src\Pertisk.Datas\Pertisk.Datas.xproj", "{351CAF92-9FC4-4DD8-A245-2CEA55D7B013}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "<%= name %>.Datas", "src\<%= name %>.Datas\<%= name %>.Datas.xproj", "{351CAF92-9FC4-4DD8-A245-2CEA55D7B013}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pertisk.Web.Tests", "test\Pertisk.Web.Tests\Pertisk.Web.Tests.xproj", "{293FE3C8-5D42-489D-8B47-F423687EDF73}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "<%= name %>.Web.Tests", "test\<%= name %>.Web.Tests\<%= name %>.Web.Tests.xproj", "{293FE3C8-5D42-489D-8B47-F423687EDF73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

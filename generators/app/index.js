@@ -31,19 +31,98 @@ module.exports = yeoman.generators.Base.extend({
         }
       );
       this.fs.copyTpl(
-        this.templatePath('_bower.json'),
-        this.destinationPath(this.props.name+'/'+'bower.json'), {
+        this.templatePath('_README.md'),
+        this.destinationPath(this.props.name+'/'+'README.md'), {
+          name: this.props.name
+        }
+      );
+      this.fs.copyTpl(
+        this.templatePath('_Pertisk.sln'),
+        this.destinationPath(this.props.name+'/'+this.props.name+'.sln'), {
           name: this.props.name
         }
       );
       this.fs.copy(
-        this.templatePath('bowerrc'),
-        this.destinationPath(this.props.name+'/'+'.bowerrc')
+        this.templatePath('bitbucket-pipelines.yml'),
+        this.destinationPath(this.props.name+'/'+'bitbucket-pipelines.yml')
+      );
+
+      this.fs.copy(
+        this.templatePath('global.json'),
+        this.destinationPath(this.props.name+'/'+'global.json')
+      );
+      this.fs.copy(
+        this.templatePath('.gitattributes'),
+        this.destinationPath(this.props.name+'/'+'.gitattributes')
+      );
+      this.fs.copy(
+        this.templatePath('.gitignore'),
+        this.destinationPath(this.props.name+'/'+'.gitignore')
       );
     },
 
     //Copy application files
     app: function() {
+
+      //Test Projects
+      this.fs.copyTpl(
+        this.templatePath('test/Pertisk.DataAccess.UnitTests/_project.json'),
+        this.destinationPath(this.props.name+'/'+'test/'+this.props.name+'.DataAccess.UnitTests/project.json'), {
+          name: this.props.name
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('test/Pertisk.Web.UnitTests/_project.json'),
+        this.destinationPath(this.props.name+'/'+'test/'+this.props.name+'.Web.UnitTests/project.json'), {
+          name: this.props.name
+        }
+      );
+
+      //src files
+      this.fs.copyTpl(
+        this.templatePath('src/Pertisk.Api/_project.json'),
+        this.destinationPath(this.props.name+'/'+'src/'+this.props.name+'.Api/project.json'), {
+          name: this.props.name
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('src/Pertisk.Web/_project.json'),
+        this.destinationPath(this.props.name+'/'+'src/'+this.props.name+'.Web/project.json'), {
+          name: this.props.name
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('src/Pertisk.DataAccess/_project.json'),
+        this.destinationPath(this.props.name+'/'+'src/'+this.props.name+'.DataAccess/project.json'), {
+          name: this.props.name
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('src/Pertisk.Datas/_project.json'),
+        this.destinationPath(this.props.name+'/'+'src/'+this.props.name+'.Datas/project.json'), {
+          name: this.props.name
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('src/Pertisk.Intercepters/_project.json'),
+        this.destinationPath(this.props.name+'/'+'src/'+this.props.name+'.Intercepters/project.json'), {
+          name: this.props.name
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('src/Pertisk.MapAttibutes/_project.json'),
+        this.destinationPath(this.props.name+'/'+'src/'+this.props.name+'.MapAttibutes/project.json'), {
+          name: this.props.name
+        }
+      );
+
+      return;
       //Server file
       this.fs.copyTpl(
         this.templatePath('_server.js'),
