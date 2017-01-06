@@ -1,0 +1,18 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webhot":"cd src/<%= name %>.Web && dotnet watch run && cd ..",
+    "apihot":"cd src/<%= name %>.Api && dotnet watch run && cd ..",
+    "re":"dotnet restore",
+    "build_src":"dotnet build src/**/project.json",
+    "build_test":"dotnet build test/**/project.json",
+    "build":"npm run build_src && npm run build_test",
+    "testhot":"cd test/<%= name %>.DataAccess.UnitTests && dotnet watch test && cd ..",
+    "access_test":"cd test/<%= name %>.DataAccess.UnitTests && dotnet test && cd ..",
+    "web_test":"cd test/<%= name %>.Web.Tests && dotnet test && cd ..",
+    "test":"npm run access_test && npm run web_test"
+  }
+}
