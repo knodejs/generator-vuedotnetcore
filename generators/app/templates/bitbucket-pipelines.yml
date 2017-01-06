@@ -1,0 +1,16 @@
+image: microsoft/dotnet:onbuild
+pipelines:
+  default:
+    - step:
+        script:
+          - dotnet restore
+          - dotnet build src/**/project.json
+          - dotnet build test/**/project.json
+
+  master:
+    - step:
+        script:
+          - dotnet restore
+          - dotnet build src/**/project.json
+          - dotnet build test/**/project.json
+          #- deploy script
